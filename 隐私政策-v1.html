@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱上喝水 · 隐私政策</title>
+  <style>
+    :root {
+      --ocean: #2196F3;
+      --ocean-deep: #1565C0;
+      --slate-deep: #263238;
+      --slate-mid: #546E7A;
+      --slate-light: #90A4AE;
+      --mist: #E3F2FD;
+      --bg: #F5F9FF;
+      --border: #E0E0E0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--slate-deep);
+      font-family: -apple-system, BlinkMacSystemFont, "HarmonyOS Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.75;
+      font-size: 16px;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--ocean-deep), var(--ocean));
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .hero .logo { font-size: 48px; margin-bottom: 8px; }
+    .hero h1 { margin: 0 0 8px; font-size: 28px; font-weight: 700; }
+    .hero .meta { font-size: 14px; opacity: 0.9; }
+    .container {
+      max-width: 760px;
+      margin: -24px auto 48px;
+      padding: 0 20px;
+    }
+    .promise {
+      background: #fff;
+      border-left: 4px solid var(--ocean);
+      border-radius: 12px;
+      padding: 20px 24px;
+      box-shadow: 0 4px 16px rgba(33, 150, 243, 0.12);
+      margin-bottom: 32px;
+      font-size: 17px;
+    }
+    .promise strong { color: var(--ocean-deep); }
+    section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    section h2 {
+      color: var(--ocean-deep);
+      font-size: 20px;
+      margin: 0 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--mist);
+    }
+    p { margin: 0 0 12px; }
+    ul { margin: 8px 0 12px; padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 15px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: var(--mist); color: var(--ocean-deep); font-weight: 600; }
+    .highlight { background: #FFF8E1; padding: 2px 6px; border-radius: 4px; }
+    footer {
+      text-align: center;
+      color: var(--slate-light);
+      font-size: 13px;
+      padding: 24px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 0 14px; }
+      section { padding: 18px 16px; }
+      .hero h1 { font-size: 22px; }
+      table { font-size: 13px; }
+      th, td { padding: 8px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="logo">💧</div>
+  <h1>爱上喝水 · 隐私政策</h1>
+  <div class="meta">版本 v1.0 · 生效日期 2026-06-27 · 适用应用：爱上喝水（com.waterre_minder.app）</div>
+</div>
+
+<div class="container">
+  <div class="promise">
+    欢迎使用「爱上喝水」。我们高度重视您的隐私。<br>
+    <strong>核心承诺：本应用是一款纯本地工具，不联网、不上传、不收集任何用户个人信息。</strong>
+  </div>
+
+  <section>
+    <h2>一、我们收集的信息</h2>
+    <p><strong>我们不收集您的任何个人信息。</strong></p>
+    <p>您在应用内产生的所有数据，包括但不限于：</p>
+    <ul>
+      <li>每日喝水打卡记录（时间、饮水量、饮品类型）</li>
+      <li>个人设置（每日目标、提醒时段、提醒间隔、每杯水量）</li>
+      <li>连续打卡天数等统计结果</li>
+    </ul>
+    <p>这些数据<span class="highlight">仅保存在您本人设备的本地数据库中</span>（HarmonyOS relationalStore），<strong>绝不会</strong>上传到任何服务器，我们也<strong>没有</strong>任何服务器来接收这些数据。</p>
+  </section>
+
+  <section>
+    <h2>二、权限使用说明</h2>
+    <p>本应用申请的权限极少，且均仅用于实现核心功能：</p>
+    <table>
+      <tr><th>权限</th><th>用途</th><th>是否必须</th></tr>
+      <tr>
+        <td><strong>代理提醒</strong><br>ohos.permission.PUBLISH_AGENT_REMINDER</td>
+        <td>在您设定的提醒时段内，按时弹出喝水提醒通知</td>
+        <td>否<br>不授权仅无法收到到点提醒，不影响打卡记录等核心功能</td>
+      </tr>
+      <tr>
+        <td><strong>通知授权</strong><br>（运行时申请）</td>
+        <td>允许应用在通知栏显示喝水提醒</td>
+        <td>否<br>可在系统设置中随时关闭</td>
+      </tr>
+    </table>
+    <p><strong>说明：</strong></p>
+    <ul>
+      <li>提醒功能仅在您<strong>主动开启并设置时段</strong>后生效，您可随时在应用内关闭或调整。</li>
+      <li>提醒由 HarmonyOS 系统代理发送，应用退出后仍可生效，但提醒内容不含任何个人隐私。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>三、数据存储与安全</h2>
+    <ul>
+      <li><strong>全部数据存储在您的设备本地</strong>，使用 HarmonyOS 提供的关系型数据库（relationalStore），位于应用私有沙箱内，其他应用无法访问。</li>
+      <li>应用<strong>不包含</strong>任何网络通信、数据上报、统计分析或广告 SDK。</li>
+      <li>当您<strong>卸载本应用</strong>时，所有本地数据将被系统自动清除。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>四、第三方共享与披露</h2>
+    <p>我们<strong>不会</strong>向任何第三方共享、出售或披露您的数据，因为：</p>
+    <ol style="padding-left:22px; margin:8px 0;">
+      <li>我们本身不收集您的数据；</li>
+      <li>本应用未集成任何第三方数据采集、分析或广告组件；</li>
+      <li>本应用不具备任何账号体系或云同步功能。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>五、您的权利</h2>
+    <ul>
+      <li><strong>知情权：</strong>通过本政策，您完全知晓应用的数据处理方式。</li>
+      <li><strong>控制权：</strong>您可在应用内随时修改或删除喝水记录、调整设置。</li>
+      <li><strong>删除权：</strong>卸载应用即可彻底删除所有本地数据。</li>
+      <li><strong>权限撤回：</strong>您可在「设置 → 应用 → 爱上喝水」中随时撤回通知/提醒权限。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>六、儿童隐私</h2>
+    <p>本应用面向一般用户，不针对 14 岁以下儿童，且不收集任何个人信息，因此不存在儿童隐私数据问题。</p>
+  </section>
+
+  <section>
+    <h2>七、本政策的更新</h2>
+    <p>如本应用未来新增功能导致数据处理方式变化（例如增加数据导出、云同步等可选能力），我们将更新本政策并在应用内显著提示。当前版本下，本应用不联网，数据完全本地化。</p>
+  </section>
+
+  <section>
+    <h2>八、联系我们</h2>
+    <p>如您对本政策有任何疑问，可通过 AGC 应用详情页公布的开发者联系方式与我们联系。</p>
+  </section>
+</div>
+
+<footer>本政策最后更新于 2026-06-27 · 爱上喝水 © 2026</footer>
+
+</body>
+</html>
